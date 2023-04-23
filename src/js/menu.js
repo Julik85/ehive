@@ -8,7 +8,7 @@ const buttonOpen = document.querySelector('.mobile-menu__btn--open');
 
 links.forEach(link => link.addEventListener('click',(e) =>{
   e.preventDefault()
-  console.log(link.textContent);
+  console.log(link.href);
   if(link.textContent === 'О нас'){    
     document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
@@ -33,6 +33,9 @@ links.forEach(link => link.addEventListener('click',(e) =>{
     document.querySelector('.footer-section').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+  }
+  if(link.textContent ==='+7 (777) 777 77 77'){
+    window.location.href = 'tel:+77777777';
   }
   
 }))

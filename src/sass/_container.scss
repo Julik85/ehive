@@ -1,0 +1,28 @@
+.container {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mobile {
+        max-width: 350px;
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+.section{
+    @include desktop {
+            padding: 0 166px 0 166px;
+        }
+    
+}

@@ -1,0 +1,126 @@
+.about-section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    height: 1003px;
+    background-image: url(../images/bg-about-as-group-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include desktop {
+        background-image: url(../images/bg-about-as-group.png);
+        height: 931px;
+      
+    }
+}
+
+// .about-image{
+//     position: relative;
+//     max-width: 1440px;
+//     height: 931px;
+// }
+
+// .drips-of-honey-left{
+//     position: absolute;
+//     top: 0;
+//     // left: 0;
+//     right: 0;
+// }
+
+.about-container{
+    text-align: center;
+    padding-top: 50px;
+    @include desktop {
+    padding-top: 127px;
+    }
+
+}
+
+.about-title {
+font-family: nexascript_regular;
+font-style: normal;
+font-size: 48px;
+line-height: 1.2;
+text-align: center;
+color: #3D2C23;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 60px;
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.text-wrap{
+    margin-top: 19px;
+    max-width: 320px;
+    // margin-right: auto;
+    @include desktop {
+        max-width: 585px;
+    }
+
+}
+
+.text-wrap_content--desktop{
+    display: none;
+    @include desktop {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #3D2C23;
+        text-align: start;   
+        display: block;     
+    }
+
+}
+
+.text-wrap_content--mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #3D2C23;
+    text-align: start;
+    @include desktop {
+        display: none;
+        
+    }
+
+}
+
+.images-wrap{
+    max-width: 505px;
+    // margin-left: auto;
+    position: relative;
+    height: 705px;
+     @include desktop {
+        width: 505px;
+    }
+}
+
+.hive-about-us{
+    position: absolute;
+    top:px;
+    left: -10px;
+    border-radius: 18px;
+    @include desktop {
+        left: 10px;
+        top: 25px;
+    }
+}
+
+.jars-of-honey-about-us {
+    position: absolute;
+    top:190px;
+    left: 40px;
+    border-radius: 18px;
+    @include desktop {
+        left: 70px;
+        top:290px;
+    }
+}

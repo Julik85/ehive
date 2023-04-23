@@ -1,0 +1,108 @@
+.section-hero{    
+    padding-top: 88px;
+    @include desktop {
+    padding-top: 0px;
+     }
+}
+
+.hero {
+    display: block;
+    max-width: 1440px;
+    flex-wrap: nowrap;
+    height: 596px;
+    flex-direction: column;
+    @include desktop {
+       flex-direction: row;
+       height: 596px;
+       display: flex;
+    }
+   
+}
+
+.hero-wrapp {
+    max-width: 320px;
+    padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+
+.hero-title{
+    font-family: nexascript_regular;
+    font-size: 45px;
+    line-height: 1.27;
+    color: #F8AC1C;
+    // text-transform: capitalize;
+    margin-bottom: 6px;
+    @include desktop {
+        font-size: 96px;
+    }
+}
+
+
+.hero-description {     
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    @include desktop {
+        font-size: 36px;
+    }
+}
+
+.hero-image_wrapp {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: auto;
+    width: 320px;
+    @include desktop {
+        width: 616px;
+    }
+
+}
+
+.bee-hero {
+    position: absolute;
+    top: 25px;    
+    left: 110px;
+    @include desktop {
+        left: 300px;
+        
+    }
+}
+
+.honeycombs-hero {
+    position: absolute;
+    top: 170px;
+    left: -20;
+    @include desktop {
+        left: 230px;
+        top: 180px;
+    }
+}
+
+.jar-of-honey-hero {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    @include desktop {
+        left: 280px;
+        
+    }
+}
+
+.flowers-hero {
+    position: absolute;
+    top: 270px;
+    left: -50px;
+    @include desktop {
+        left: 55px;
+        top: 250px;
+    }
+    
+}

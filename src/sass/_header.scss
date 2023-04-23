@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #3d2c2354;
+    @include desktop {
+        position: unset;
+         }
+}
+
+.mobile-menu {
+    position: relative;
+    width: 280px;
+    height: 73px;
+    padding-top: 17px;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+    background-color: #3d2c23;
+    flex-flow: column wrap;
+    gap: 25px;
+    margin-top: 10px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 20px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-list__link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    &:hover,
+    &:focus {
+        color: #F8AC1C;
+     }
+}
+
+.nav-list__link--tel {
+    font-weight: 700;
+}
+
+.mobile-menu__btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 34px;
+    height: 19px;
+    color: #fff;
+    z-index: 200;
+
+    position: absolute;
+    top: 23;
+    right: 0;
+
+    @include desktop {
+        display: none;
+    }
+
+    &:hover .mobile-menu__icon, &:focus .mobile-menu__icon{
+        fill: #F8AC1C;
+    }
+}
+.mobile-menu__btn--close{
+top: 8px;
+    right: 19px;
+}
+.mobile-menu__icon {
+    fill: currentColor;
+
+}
+
+// DESKTOP
+.desk-header {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+    }
+}
+
+.desk-header__logo--thumb {
+    display: none;
+
+    @include tablet {
+        display: block;
+        // padding-top: 25px;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+}
+
+
+.navigation-list {
+    display: flex;
+    gap: 31px;
+
+}
+
+.navigation-list__item {}
+
+.navigation-list__link {
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+
+    &:hover,
+    &:focus {
+        color: #F8AC1C;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 22;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #F8AC1C;
+        }
+    }
+}
+
+.navigation-list__link--tel {
+    font-weight: 700;
+}

@@ -1,2 +1,34 @@
 @import './common';
-@import './example';
+
+@import './reset';
+@import './mixins';
+@import './container';
+@import './hidden';
+@import './header';
+@import './hero';
+@import './about';
+@import './why-hive';
+@import './about-production';
+@import './products-and-cost';
+@import './footer';
+
+
+
+@import './mixins';
+@import './hidden';
+
+@import './conatiner';
+@import './header';
+
+@font-face {
+    font-family:lato-medium ;
+    src: url('../fonts/lato-medium.ttf');
+}
+@font-face {
+    font-family: nexascript_regular;
+    src: url('../fonts/NexaScript-Regular.ttf');
+}
+@font-face {
+    font-family: MarckScript-Regular;
+    src: url(../fonts/MarckScript-Regular.ttf);
+}

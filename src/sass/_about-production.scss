@@ -1,0 +1,87 @@
+.production-section{
+    padding-top: 101px;
+}
+
+
+.production-title{
+    font-family: nexascript_regular;
+    font-style: normal;
+    font-size: 48px;
+    line-height:calc(58 / 48 );
+    text-align: center;
+    color: #F8AC1C;
+
+}
+
+.content-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30;
+    margin-top: 30px;
+    
+}
+
+.content-wrap__img--desktop{
+display: none;
+    @include desktop {
+        display: flex;
+    }
+}
+
+.content-wrap__img--mobile{
+    display: flex;
+    margin-top: 10px;
+    @include desktop {
+        display: none;
+    }
+}
+.content-img{
+    border-radius: 20px;
+}
+
+.content-wrap__text{
+    max-width: 600px;
+}
+
+.content-text{
+font-family: 'Poppins';
+font-style: normal;
+font-size: 16px;
+line-height: calc(24 / 16);
+color: #FFFFFF;
+}
+
+.our-prodaktion__title {
+font-family: 'Poppins';
+font-style: normal;
+font-size: 24px;
+line-height: calc(36 / 24);
+color: #F8AC1C;
+margin-top: 10px;
+
+}
+
+.our-prodaktion__list{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.our-prodaktion__item{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-image: url(../images/icon-rhombus.svg);
+    background-position: bottom 5px left 1px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+// .our-prodaktion__item::before{}
+
+.our-prodaktion__item--text{
+font-family: 'Poppins';
+font-style: normal;
+font-size: 16px;
+line-height: calc(24 / 16);
+color: #FFFFFF;
+
+}

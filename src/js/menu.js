@@ -44,6 +44,10 @@ openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
+  if( !navigation.classList.contains('hidden')){
+    closeMenuBtn.classList.remove('hidden');
+    return
+  }
   navigation.classList.toggle('hidden');
   document.body.classList.toggle('no-scroll');
   closeMenuBtn.classList.toggle('hidden');

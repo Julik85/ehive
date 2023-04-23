@@ -3,6 +3,39 @@ const closeMenuBtn = document.querySelector('.mobile-menu__btn--close');
 const navigation = document.querySelector('.nav');
 
 const navigate = document.querySelector('.nav');
+const links = document.querySelectorAll('.nav-list__link');
+const buttonOpen = document.querySelector('.mobile-menu__btn--open');
+
+links.forEach(link => link.addEventListener('click',(e) =>{
+  e.preventDefault()
+  console.log(link.textContent);
+  if(link.textContent === 'О нас'){    
+    document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' })
+    navigation.classList.add('hidden');
+    buttonOpen.classList.remove('hidden');
+  }
+  if(link.textContent === 'Производство'){    
+    document.querySelector('.production-section').scrollIntoView({ behavior: 'smooth' })
+    navigation.classList.add('hidden');
+    buttonOpen.classList.remove('hidden');
+  }
+  if(link.textContent === 'Продукция'){    
+    document.querySelector('.products').scrollIntoView({ behavior: 'smooth' })
+    navigation.classList.add('hidden');
+    buttonOpen.classList.remove('hidden');
+  }
+  if(link.textContent === 'Цены'){    
+    document.querySelector('.products').scrollIntoView({ behavior: 'smooth' })
+    navigation.classList.add('hidden');
+    buttonOpen.classList.remove('hidden');
+  }
+  if(link.textContent === 'Контакты'){    
+    document.querySelector('.footer-section').scrollIntoView({ behavior: 'smooth' })
+    navigation.classList.add('hidden');
+    buttonOpen.classList.remove('hidden');
+  }
+  
+}))
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);

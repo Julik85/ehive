@@ -6,7 +6,7 @@
 //   document.querySelector('.products').scrollIntoView({ behavior: 'smooth' });
 // });
 
-const topLink = document.querySelector('.top-link');
+const topLink = document.querySelector('.footer-up--link');
 
 topLink.addEventListener('click', function (event) {
   event.preventDefault();

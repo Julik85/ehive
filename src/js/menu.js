@@ -13,26 +13,31 @@ links.forEach(link => link.addEventListener('click',(e) =>{
     document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+    document.body.classList.remove('no-scroll');
   }
   if(link.textContent === 'Производство'){    
     document.querySelector('.production-section').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+    document.body.classList.remove('no-scroll');
   }
   if(link.textContent === 'Продукция'){    
     document.querySelector('.products').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+    document.body.classList.remove('no-scroll');
   }
   if(link.textContent === 'Цены'){    
     document.querySelector('.products').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+    document.body.classList.remove('no-scroll');
   }
   if(link.textContent === 'Контакты'){    
     document.querySelector('.footer-section').scrollIntoView({ behavior: 'smooth' })
     navigation.classList.add('hidden');
     buttonOpen.classList.remove('hidden');
+    document.body.classList.remove('no-scroll');
   }
   if(link.textContent ==='+7 (777) 777 77 77'){
     window.location.href = 'tel:+77777777';

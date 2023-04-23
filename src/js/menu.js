@@ -40,16 +40,37 @@ links.forEach(link => link.addEventListener('click',(e) =>{
   
 }))
 
-openMenuBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
+openMenuBtn.addEventListener('click', openMenu);
+closeMenuBtn.addEventListener('click', closeMenu);
 
-function toggleMenu() {
-  if( !navigation.classList.contains('hidden')){
-    closeMenuBtn.classList.remove('hidden');
-    return
-  }
-  navigation.classList.toggle('hidden');
-  document.body.classList.toggle('no-scroll');
-  closeMenuBtn.classList.toggle('hidden');
-  openMenuBtn.classList.toggle('hidden');
+function openMenu(){
+  navigation.classList.remove('hidden');
+  document.body.classList.add('no-scroll');
+  closeMenuBtn.classList.remove('hidden');
+  openMenuBtn.classList.add('hidden');
+
 }
+
+function closeMenu(){
+  navigation.classList.add('hidden');
+  document.body.classList.remove('no-scroll');
+  closeMenuBtn.classList.add('hidden');
+  openMenuBtn.classList.remove('hidden');
+
+}
+
+// function toggleMenu() {
+//   if( !navigation.classList.contains('hidden')){
+//     closeMenuBtn.classList.remove('hidden');
+//     return
+//   }
+//   if( navigation.classList.contains('hidden')){
+//     closeMenuBtn.classList.add('hidden');
+//     navigation.classList.add('hidden');
+//     return
+//   }
+//   navigation.classList.toggle('hidden');
+//   document.body.classList.toggle('no-scroll');
+//   closeMenuBtn.classList.toggle('hidden');
+//   openMenuBtn.classList.toggle('hidden');
+// }
